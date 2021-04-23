@@ -1,0 +1,266 @@
+.github {
+	position: fixed;
+	right: -44px;
+	top: -15px;
+	width: 130px;
+	height: 70px;
+	z-index: 9;
+	transform: rotate(45deg);
+}
+.github:after {
+	background: #f7f7f7 url(../img/github-logo.png) no-repeat center 82%;
+	background-size: 38% auto;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.dicson {
+	position: fixed;
+	left: -44px;
+	top: -15px;
+	width: 130px;
+	height: 70px;
+	z-index: 9;
+	transform: rotate(-45deg);
+}
+.dicson:after {
+	background: #f7f7f7 url(../img/dicson-logo.jpg) no-repeat center 82%;
+	background-size: 38% auto;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.flex-box {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-box .wrap {
+	width: 90%;
+	padding: 50px 0;
+}
+/* Show Hide Element */
+body .wrap > input[type=radio] {
+	display: none;
+}
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2),
+#tab-3:checked ~ .tab label:nth-child(3),
+#tab-4:checked ~ .tab label:nth-child(4) {
+	color: #2f769a;
+}
+.content > div {
+	display: none;
+}
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3),
+#tab-4:checked ~ .content div:nth-child(4)  {
+	display: block;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+html {
+	min-height: 100%;
+	background: #fff;
+}
+body {
+	font-family: Arial, sans-serif;
+	color: #0f394e;
+	font-weight: 400;
+	text-align: center;
+}
+button, input, button em {
+	font-family: Arial, sans-serif;
+}
+h1 {
+	font-size: 65px;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+h1 + p {
+	opacity: 0.9;
+	font-size: 17px;
+	margin-bottom: 19px;
+}
+.button {
+	cursor: pointer;
+	display: inline-block;
+	background: none;
+	border: none;
+	outline: none;
+	position: relative;
+	margin: 0 15px;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+.button-group-4 .button {
+	width: 104px;
+	height: 104px;
+}
+.button-group-1 .button, .button-group-2 .button, .button-group-3 .button {
+	width: 250px;
+	height: 104px;
+}
+.button-svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.button-icon {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+	font-size: 28px;
+	color: #fff;
+	user-select: none;
+}
+.button-border .button-icon {
+	color: #0f394e;
+}
+.button-icon em {
+	font-style: normal;
+	padding-left: 8px;
+	position: relative;
+	top: -2px;
+	font-size: 1em;
+}
+.button-border .button-svg svg {
+	fill: none;
+	stroke: #0f394e;
+	stroke-width: 4px;
+	stroke-linecap: round;
+}
+.button-fill .button-svg svg {
+	fill: #0f394e;
+}
+.tab {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-bottom: 30px;
+}
+.tab label {
+	cursor: pointer;
+	color: #0f394e;
+	font-size: 18px;
+	display: inline-flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+.tab label:after {
+	color: #000;
+	cursor: default;
+	content: '/';
+	margin: 0 30px;
+	font-family: serif;
+	font-size: 2.8em;
+}
+.tab label:last-child:after {
+	display: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../font/icomoon.woff?le0cg4') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-happy2:before {
+    content: "\e9e0";
+}
+.icon-smile2:before {
+    content: "\e9e2";
+}
+.icon-cool2:before {
+    content: "\e9ec";
+}
+.icon-angry2:before {
+    content: "\e9ee";
+}
+.icon-evil2:before {
+    content: "\e9f0";
+}
+.icon-shocked2:before {
+    content: "\e9f2";
+}
+.icon-baffled2:before {
+    content: "\e9f4";
+}
+.icon-sleepy2:before {
+    content: "\e9fe";
+}
+.icon-hangouts:before {
+    content: "\ea8e";
+}
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-sina-weibo:before {
+    content: "\ea9a";
+}
+.icon-youtube:before {
+    content: "\ea9d";
+}
+.icon-vimeo:before {
+    content: "\eaa0";
+}
+.icon-github:before {
+    content: "\eab0";
+}
+.icon-appleinc:before {
+    content: "\eabe";
+}
+.icon-android:before {
+    content: "\eac0";
+}
+.icon-windows8:before {
+    content: "\eac2";
+}
+.icon-chrome:before {
+    content: "\ead9";
+}
+.icon-firefox:before {
+    content: "\eada";
+}
+.icon-IE:before {
+    content: "\eadb";
+}
+.icon-safari:before {
+    content: "\eadd";
+}
+.icon-opera:before {
+    content: "\eade";
+}
